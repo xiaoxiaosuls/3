@@ -1,0 +1,3 @@
+<modal hidden="{{hidden}}" title="tips" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm" no-cancel="{{nocancel}}">
+  是否确定删除？
+</modal>

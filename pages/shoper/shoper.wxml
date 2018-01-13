@@ -1,0 +1,22 @@
+<view class="header flex-col h-center v-center">
+<view style="margin:30rpx 50rpx 50rpx 60rpx " class="level2"  >我的店铺</view></view>
+<view><text class="qq4">(*为必填项)</text>
+  <view   style="margin:10rpx 180rpx 0rpx 0rpx">*店铺名称：
+  {{name}}</view>
+  <view   style="margin:50rpx 180rpx 50rpx 0rpx">
+  <text decode="{{true}}">&nbsp;店铺介绍： {{show}}</text>
+  </view>
+   <view  style="margin:50rpx 180rpx 50rpx 0rpx">
+  *联系电话：{{phone}}
+  </view>
+  <view  style="margin:50rpx 180rpx 50rpx 0rpx">
+  *店铺地址：{{addr}}
+  </view>
+  <view style="margin:50rpx 180rpx 0rpx 0rpx">*店铺图片：
+  <image class="avatar" style="margin:50rpx 60rpx 10rpx 100rpx " src="{{pic1}}">  </image>
+  </view>
+  <view style="margin:10rpx 180rpx 0rpx 0rpx">*营业执照：
+  <image class="avatar" style="margin:50rpx 60rpx 50rpx 100rpx " src="{{pic2}}">  </image>
+  </view>
+ </view>
+ <button  style="margin:10rpx 0rpx 0rpx 300rpx" bindtap="change" size="mini">修改</button>

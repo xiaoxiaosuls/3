@@ -1,0 +1,20 @@
+<view class="header flex-col h-center v-center">
+<view style="margin:50rpx 50rpx 50rpx 60rpx " class="level2" >我的活动</view></view>
+<view>
+<block wx:for="{{huodong}}" wx:for-item="huodong" wx:key="objectId" wx:if="{{huodong.UserId==id}}">
+
+<image class="avatar" style="margin:50rpx 60rpx 10rpx 200rpx " bindtap="toshop" src="{{huodong.pic}}"></image>
+  <view class="level fs-16" style="margin:10rpx 180rpx 0rpx 180rpx">活动名称：
+  {{huodong.name}}</view>
+  <view class="level fs-16"  style="margin:10rpx 180rpx 0rpx 180rpx">
+  活动简介：
+  {{huodong.show}}
+  </view> 
+  <view class="level fs-16" style="margin:10rpx 180rpx 0rpx 180rpx">
+  活动价格：￥
+  {{huodong.price}}
+  </view>
+  <button bindtap='toshop' style="margin:50rpx 0rpx 0rpx 250rpx"  size='mini'> 详情</button >
+  <button bindtap='tomod'   size='mini'> 修改</button >
+  
+</block></view>

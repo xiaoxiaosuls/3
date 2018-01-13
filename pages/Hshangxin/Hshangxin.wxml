@@ -1,0 +1,23 @@
+<view class="header flex-col h-center v-center">
+<view style="margin:30rpx 50rpx 50rpx 60rpx " class="level2" >我的商品</view></view>
+<view>
+ <view style="margin:30rpx 50rpx 50rpx 60rpx ">
+  <text>*活动套餐支持任选三种商品</text>
+  </view>
+<block wx:for="{{shop}}" wx:for-item="shop" wx:key="objectId">
+ <icon  wx:if="{{shop.Selected}}" type="success_circle" color="green" bindtap="selectList" id="{{shop.objectId}}" data-index="{{index}}"/>
+        <icon wx:else type="circle" bindtap="selectList"  id="{{shop.objectId}}" data-index="{{index}}" />
+        
+<image class="avatar" style="margin:50rpx 60rpx 10rpx 200rpx " src="{{shop.pic}}"></image>
+  <view   style="margin:10rpx 180rpx 0rpx 270rpx">商品名称：
+  {{shop.content.name}}</view>
+  <view   style="margin:10rpx 180rpx 0rpx 270rpx">
+  商品简介：
+  {{shop.content.show}}
+  </view>
+  <view  style="margin:10rpx 180rpx 0rpx 270rpx">
+  商品价格：￥
+  {{shop.content.price}}
+  </view>
+</block></view>
+<button bindtap='toshangchuan'>上传</button>

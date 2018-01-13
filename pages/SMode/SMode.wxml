@@ -1,0 +1,31 @@
+<view class="qq">我的店铺</view>
+<form bindsubmit="formSubmit" >
+<text class="qq4">(*为必填项)</text>
+<view class="qq5" style="margin:30rpx 0rpx 50rpx 0" >
+*店铺名称：（长度不大于8）<input name="name" class="qq6" value="{{name}}" style="height: 1.3em" />
+</view>
+<view  style="margin:10rpx 0rpx 50rpx 0">
+<text class="qq7" decode="{{true}}">&nbsp;店铺介绍：（选填，长度不大于12）</text><input name="show" class="qq6" value="{{show}}" style="height: 1.3em" />
+</view>
+<view  class="qq5" style="margin:10rpx 0rpx 50rpx 0">
+*店铺地址：（长度不大于12）<input name="addr" class="qq6" value="{{addr}}" style="height: 1.3em" />
+</view>
+<view class="qq5" style="margin:10rpx 0rpx 50rpx 0">
+*联系电话：（请填写11位手机号）<input name="phone" class="qq6" value="{{phone}}"style="height: 1.3em" />
+</view>
+<view class="qq5" style="margin:10rpx 0rpx 20rpx 0">
+*店铺图片：
+<image class="avatar" style="margin:50rpx 60rpx 10rpx 100rpx " src="{{pic1}}">  </image>
+<button style="margin:10rpx 0rpx 0rpx 100rpx" bindtap="chooseimage" name="pic1" size="mini">浏览</button>  
+<image src="{{tempFilePaths1 }}" mode="aspecFill" style="width: 20%; height: 30rpx"/> 
+</view>
+<view  class="qq5" style="margin:10rpx 0rpx 20rpx 0">
+*营业执照：
+<image class="avatar" style="margin:50rpx 60rpx 10rpx 100rpx " src="{{pic2}}">  </image>
+<button style="margin:10rpx 0rpx 0rpx 100rpx" bindtap="chooseimage1" name="pic2" size="mini">浏览</button>  
+<image src="{{tempFilePaths2}}" mode="aspecFill" style="width: 20%; height: 30rpx"/> 
+</view>
+<view class="btn-area">
+    <button style="margin:100rpx 0rpx 0rpx 280rpx"  formType="submit" size="mini" class="qq3">提交</button>
+</view>
+</form>

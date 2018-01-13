@@ -1,0 +1,48 @@
+/* pages/Hshangxin/Hshangxin.wxss */
+.level{
+  color: white;
+  padding: 5rpx 40rpx;
+  border-radius: 20rpx;
+  background: rgba(0,0,0,0.4);
+  margin-top:-20rpx; 
+}
+
+.qq3{
+    width: 30%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar{
+  width: 350rpx;
+  height: 300rpx;
+  margin: 50rpx;
+  border-radius: 20%;
+  border: 3px solid #a99999;
+}
+
+.content{
+  padding: 10rpx;
+  border-bottom: 1px solid #f3f3f3;
+   margin: 10rpx；
+    
+}
+.level1{
+  color: white;
+  padding: 0rpx 90rpx;
+  border-radius: 20rpx;
+  background: rgba(255,0,0,0.7);
+  margin-top:-20rpx; 
+}
+
+.header{
+  width: 100%;
+  height: 100rpx;
+  background: radial-gradient(#d36262,#ce2f2f);
+  border-bottom: 25rpx solid #f3f3f3;
+}
+.level2{
+  color: white;
+   font-size: 20px;
+}

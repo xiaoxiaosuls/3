@@ -1,0 +1,3 @@
+<modal hidden="{{hidden}}" title="tip" confirm-text="关闭" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm" no-cancel="{{nocancel}}">
+          操作中
+</modal>

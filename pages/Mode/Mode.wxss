@@ -1,0 +1,59 @@
+/* pages/Mode/Mode.wxss */
+/* pages/shangxin/shangxin.wxss */
+/* pages/my/my.wxss */
+.header{
+  width: 100%;
+  height: 400rpx;
+  background: radial-gradient(#d36262,#ce2f2f);
+  border-bottom: 25rpx solid #f3f3f3;
+}
+.avatar{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  border: 3px solid #c13636;
+}
+.nickname{
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+  color: white;
+}
+.level{
+  color: white;
+  padding: 5rpx 40rpx;
+  border-radius: 20rpx;
+  background: rgba(0,0,0,0.4);
+  margin-top:-20rpx; 
+}
+.exp{
+  margin-top: 5rpx;
+  padding: 5rpx 80rpx;
+  background: rgba(0,0,0,0.6)
+}
+.content{
+  padding: 20rpx 0 20rpx 20rpx;
+  border-bottom: 1px solid #f3f3f3;
+   margin: 10rpx
+}
+.sm-img{
+  margin-right: 10rpx;
+}
+
+.qq{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+.qq2{
+ 
+   margin-top: 100rpx
+}
+.qq3{
+    width: 30%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}

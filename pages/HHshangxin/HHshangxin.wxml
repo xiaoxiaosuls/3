@@ -1,0 +1,23 @@
+<view class="qq">修改活动</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+<view>
+活动名称：<input name="name" class="content flex-row" value="{{name}}" style="height: 1.3em" />
+</view>
+<view>
+活动图片：
+<image src="{{pic }}" mode="aspecFill" style="width: 20%; height: 30rpx"/> 
+<button style="margin:10rpx 0rpx 0rpx 100rpx" bindtap="chooseimage" name="pic" size="mini">浏览</button>  
+<image src="{{tempFilePaths }}" mode="aspecFill" style="width: 20%; height: 30rpx"/> 
+</view>
+<view class="qq2">活动简介<input name="show" class="content flex-row" value="{{show}}"  style="height: 1.3em" />
+</view>
+<view class="qq2">活动价格：<input name="price" type="digit" class="content flex-row" value="{{price}}" style="height: 1.3em" />
+<view class="btn-area">
+    <button style="margin:100rpx 0rpx 0rpx 150rpx"  formType="submit" size="mini" class="qq3">上传</button>
+    <button formType="reset" size="mini" class="qq3">重置</button>
+  </view>
+</view>
+
+</form>
+<view class="errod">{{tip}}</view>

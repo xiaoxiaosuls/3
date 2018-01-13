@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/huodong/huodong",
+    "pages/my/my",
+    "pages/Manager/Manager",
+    "pages/shangxin/shangxin",
+    "pages/Mod/Mod",
+    "pages/Del/Del",
+    "pages/shoper/shoper",
+    "pages/Mode/Mode",
+    "pages/SMode/SMode",
+    "pages/HManager/HManager",
+    "pages/Hshangxin/Hshangxin",
+    "pages/Hshangxin/cz",
+    "pages/HDel/HDel",
+    "pages/HDel/tips",
+    "pages/HMod/HMod",
+    "pages/orderList/orderList",
+    "pages/shangxin/confirm",
+    "pages/Del/tips",
+    "pages/HHshangxin/HHshangxin",
+    "pages/detailhd/detailhd"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#D43E37",
+    "navigationBarTitleText": "商家版",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#D43E37",
+    "enablePullDownRefresh": true  
+  },
+  "tabBar": {
+    "color": "#6A6767",
+    "selectedColor": "#D74D4C",
+    "backgroundColor": "#F5F5F5",
+
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "店铺"
+      },
+      {
+        "pagePath": "pages/huodong/huodong",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}

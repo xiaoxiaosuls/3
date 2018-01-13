@@ -1,0 +1,18 @@
+<view class="header flex-col h-center v-center">
+<view style="margin:30rpx 50rpx 50rpx 60rpx " class="level2" >商品详情</view></view>
+<view>
+<block wx:for="{{shop}}" wx:for-item="shop" wx:key="objectId">
+<view  wx:if="{{shop.Selected}}"  color="green"  id="{{shop.objectId}}">
+<image class="avatar" style="margin:50rpx 60rpx 10rpx 200rpx " src="{{shop.pic}}"></image>
+  <view  class="level fs-16" style="margin:10rpx 180rpx 0rpx 180rpx">商品名称：
+  {{shop.content.name}}</view>
+  <view class="level fs-16"  style="margin:10rpx 180rpx 0rpx 180rpx">
+  商品简介：
+  {{shop.content.show}}
+  </view>
+  <view class="level fs-16" style="margin:10rpx 180rpx 0rpx 180rpx">
+  商品价格：￥
+  {{shop.content.price}}
+  </view>
+  </view> 
+</block></view>

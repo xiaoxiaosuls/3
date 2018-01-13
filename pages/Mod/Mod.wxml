@@ -1,0 +1,11 @@
+<view class="qq" style="margin:10rpx 180rpx 100rpx 0rpx">修改商品</view>
+<view>
+<block wx:for="{{shop}}" wx:for-item="shop" wx:key="objectId">
+ 
+  <view   style="margin:100rpx 180rpx 0rpx 220rpx">商品名称：{{shop.content.name}}</view>
+  <view   style="margin:0rpx 180rpx 0rpx 220rpx">商品简介：{{shop.content.show}}</view>
+  <view   style="margin:0rpx 180rpx 0rpx 220rpx">商品价格：￥{{shop.content.price}}</view>
+  
+  <image class="avatar" style="margin:20rpx 60rpx 10rpx 200rpx " src="{{shop.pic}}"></image>
+   <button class="qq3" id="{{shop.objectId}}" bindtap="change">修改</button>
+</block></view> 

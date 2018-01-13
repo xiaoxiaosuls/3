@@ -1,0 +1,60 @@
+
+ <view class="header flex-row space-around">
+    <view class="tab {{nowtab=='全部订单' ? 'tabActive' : ''}}" bindtap="switchTabs" data-nowtab='全部订单' >全部订单</view>
+    <view class="tab {{nowtab=='待发货' ? 'tabActive' : ''}}" bindtap="switchTabs" data-nowtab='待发货' >待发货</view>
+    <view class="tab {{nowtab=='已完成' ? 'tabActive' : ''}}" bindtap="switchTabs" data-nowtab='已完成' >已完成</view>
+  </view>
+
+   <view  wx:for="{{order}}" wx:key="{{objectId}}"  wx:if="{{nowtab=='全部订单' || item.status==nowtab}}"  >
+  <view wx:if="{{item.UserId==id}}"><view style="margin:10rpx 0rpx 10rpx 0rpx">订单号：{{item.objectId}}</view>
+    <view >
+      <view >
+
+ 
+     <view wx:for="{{item.list}}"  wx:for-item="list"  wx:for-index="i" >
+     <view  wx:for="{{shop}}"  wx:for-item="shop"  wx:key="{{objectId}}" wx:if="{{i==shop.objectId}}"> <view class="container1 ">
+     
+      <image class="left " src="{{shop.pic}}" />   
+      <view class="right"> 
+      <view style="margin:20rpx 0rpx 0rpx 50rpx">{{shop.content.name}}</view>
+        <view style="margin:20rpx 0rpx 0rpx 50rpx">数量：{{list}}件</view>  
+        <view style="margin:20rpx 0rpx 0rpx 50rpx">￥{{shop.content.price}}*{{list}}</view>
+        </view>    
+    
+    </view></view>
+     <view  wx:for="{{huodong}}"  wx:for-item="huodong"  wx:key="{{objectId}}" wx:if="{{i==huodong.objectId}}"> <view class="container1 ">
+     
+      <image class="left " src="{{huodong.pic}}" />   
+      <view class="right"> 
+      <view style="margin:20rpx 0rpx 0rpx 50rpx">{{huodong.name}}</view>
+        <view style="margin:20rpx 0rpx 0rpx 50rpx">数量：{{list}}件</view>  
+        <view style="margin:20rpx 0rpx 0rpx 50rpx">￥{{huodong.price}}*{{list}}</view>
+        </view>    
+    
+    </view></view>
+
+    </view>
+
+
+      
+         <view >总价：￥{{item.total}}</view>
+ <view>共计：{{item.count}}件</view>      
+  <view wx:for="{{addr}}" wx:for-item="addr"   wx:key="{{objectId}}" wx:if="{{addr.objectId==item.addrId}}"> 
+  <view>  姓名：{{addr.name}}</view>
+               <view>  地址：{{addr.address}}</view>
+                <view>   联系电话：{{addr.phone1}} </view>
+                <view>   备用电话：{{addr.phone2}}</view></view>
+      </view>
+    </view>
+
+    <view class="bottomContent flex-row space-between v-center">
+      <view>
+        <view>状态：<text class="color-red">{{item.status}}</text></view>
+        <view wx:if="{{item.status=='已完成'}}"></view>
+        <view wx:if="{{item.status=='待发货'}}"> <button type="warn" size="mini" class="btn" bindtap='tofahuo' id="{{item.objectId}}">发货</button></view>
+      </view> <view class="line"></view>
+  
+     
+    </view>
+  </view>
+</view>
